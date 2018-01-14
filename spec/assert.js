@@ -6,7 +6,7 @@ var assert = {
       console.log(testname + " passed!");
     }
     if (assertionToCheck === false) {
-      throw new Error(testname + " failed: " + assertionToCheck + " is not truthy");
+      throw new Error(testname + " failed: " + assertionToCheck + " is not true");
     }
   },
 
@@ -15,7 +15,7 @@ var assert = {
       console.log(testname + " passed!");
     }
     if (assertionToCheck === true) {
-      throw new Error(testname + " failed: " + assertionToCheck + " is not truthy");
+      throw new Error(testname + " failed: " + assertionToCheck + " is not false");
     }
   }
 };
